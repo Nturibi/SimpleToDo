@@ -4,7 +4,7 @@
 
 Submitted by: **Kenneth Mutethia Nturibi**
 
-Time spent: **3** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## User Stories
 
