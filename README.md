@@ -25,7 +25,6 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
 
 <img src='https://raw.githubusercontent.com/Nturibi/SimpleToDo/master/app/src/main/res/drawable/final.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -33,7 +32,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
 The bottom border on the edit text was coming in contact with the Add button. I overcame this challenge by reducing the width of the editText. 
 
 ## License
