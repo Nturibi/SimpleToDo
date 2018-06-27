@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import org.apache.commons.io.FileUtils;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> items;
     ArrayAdapter<String> itemsAdapter;
     ListView lvItems;
+    private  int prevImageNum = 1;
 
 
     @Override
@@ -65,6 +67,22 @@ public class MainActivity extends AppCompatActivity {
         etNewItem.setText("");
         //notify user after adding
         Toast.makeText(getApplicationContext(),"Item added to list", Toast.LENGTH_SHORT).show();
+        //change the picture when you add an item
+        RelativeLayout mainLayout = (RelativeLayout) findViewById(R.id.rLayout1);
+        int num = (int) (Math.random()*3 +1);
+        while (num == prevImageNum){
+            num = (int) (Math.random()*3 +1);
+        }
+        if (num == 0){
+            mainLayout.setBackgroundResource(R.drawable.p1);
+
+        }else if (num == 1){
+            mainLayout.setBackgroundResource(R.drawable.p2);
+
+        }else {
+            mainLayout.setBackgroundResource(R.drawable.p3);
+        }
+        prevImageNum = num;
 
     }
 

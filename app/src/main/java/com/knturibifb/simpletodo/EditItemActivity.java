@@ -40,5 +40,6 @@ public class EditItemActivity extends AppCompatActivity {
         data.putExtra(ITEM_POSITION, position); // ints work too
         setResult(RESULT_OK, data); // set result code and bundle data for response
         finish(); // closes the edit activity, passes intent back to main
+
     }
 }
