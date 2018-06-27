@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         lvItems.setAdapter(itemsAdapter);
         //set up the list view listener
         setupListViewListener();
-
     }
 
 
